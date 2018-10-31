@@ -25,7 +25,7 @@ namespace gestcor.Data.Repository.Base
             DbSet.Add(obj);
         }
 
-        public virtual TEntity GetById(Guid id)
+        public virtual TEntity GetById(int id)
         {
             return DbSet.Find(id);
         }
@@ -40,7 +40,7 @@ namespace gestcor.Data.Repository.Base
             DbSet.Update(obj);
         }
 
-        public virtual void Remove(Guid id)
+        public virtual void Remove(int id)
         {
             DbSet.Remove(DbSet.Find(id));
         }
